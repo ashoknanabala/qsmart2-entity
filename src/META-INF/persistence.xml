@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="qsmart-entity-sqlPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.vm.Qsmart.model.PharmacyTokenServe</class>
+    <class>com.vm.Qsmart.model.PharmacyTokenInfo</class>
+    <class>com.vm.Qsmart.model.VvManualPharmacyPrint</class>
+    <class>com.vm.Qsmart.model.views.VvPharmaWaitinggrid</class>
+    <class>com.vm.Qsmart.model.views.VvPharmaWaitingQueue</class>
+    <class>com.vm.Qsmart.model.VvPharmaServingTokens</class>
+    <class>com.vm.Qsmart.model.views.VvLabWaitinggrid</class>
+    <class>com.vm.Qsmart.model.views.VvLabWaitingQueue</class>
+    <class>com.vm.Qsmart.model.views.VvLabServingTokens</class>
+    <class>com.vm.Qsmart.model.views.VvLabReport</class>
+    <class>com.vm.Qsmart.model.DefaultTokenInfo</class>
+    <class>com.vm.Qsmart.model.DefaultTokenServe</class>
+    <class>com.vm.Qsmart.model.views.VvRegistrationServingTokens</class>
+    <class>com.vm.Qsmart.model.views.VvRegistrationWaitinggrid</class>
+    <class>com.vm.Qsmart.model.views.VvRegistrationReport</class>
+    <class>com.vm.Qsmart.model.views.VvRegistrationWaitingQueue</class>
+    <class>com.vm.Qsmart.model.PharmaMaster</class>
+    <class>com.vm.Qsmart.model.PharmaService</class>
+    <class>com.vm.Qsmart.model.PharmaServiceType</class>
+    <class>com.vm.Qsmart.model.PharmaMasterCdr</class>
+    <class>com.vm.Qsmart.model.PharmaApiMaster</class>
+    <class>com.vm.Qsmart.model.PharmaDhlCdr</class>
+    <class>com.vm.Qsmart.model.views.VvPharmacyServiceWaitingCount</class>
+    <class>com.vm.Qsmart.model.TblBranch</class>
+    <class>com.vm.Qsmart.model.TblLocation</class>
+    <class>com.vm.Qsmart.model.TblService</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://202.65.159.118:1433;databaseName=Qsmart123"/>
+      <property name="javax.persistence.jdbc.user" value="Develop"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="syndev#123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
